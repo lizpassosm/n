@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #209c88;
+    color: #200705;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topo{
+    background-color: #51c7a0;
+    padding: 30px;
+    text-align: center;
+    color: #071e50;
+}   
+.topo h1{
+    font-size: 40px;
+
+    }
+.menuTopo{
+    overflow: hidden;
+    background-color: #aed1bc;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+.menuTopo ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menuTopo ul li{
+    float:left;
+}
+.menuTopo a{
+    display: block;
+    color: #111010;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    background-color: #5eb99c;
+    margin: 0 2px;
+    border-radius: 30px;
+}
+.menuTopo a:hover{
+    background-color: #209c88;
+    color: #af3535;
+    font-weight: bold;
+}
+.corpo{
+    width: 1024px;
+    margin: 10px auto;
+}
+.corpo:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.esquerda{
+    width: 75%;
+    float: left;
+}
+
+.direita{
+    width: 25%;
+    float: right;
+
+}
+
+.destaque{
+    background-color: #53a77d;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.imagens{
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
+
+footer{
+    background-color: #2b8173;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+ @media  screen and (max-width:1028px) {
+    .esquerda, .direita{
+        width: 100%;
+        padding: 10px;
+
+    }
+    .corpo{
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+    }
+    
+ }
+
+ @media screen and (max-width: 400px) {
+    .menuTopo ul li, .menuTopo a {
+        float: none;
+        width: 100%;
+    }
+    
+ }
+
